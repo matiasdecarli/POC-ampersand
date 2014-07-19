@@ -31,11 +31,11 @@
     "underscore": "^1.6.0",
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
-    "grunt-cdn": "^0.5.2"
-  },
-  "devDependencies": {
+    "grunt-cdn": "^0.5.2",
+    "grunt-azure-sync": "^0.2.1",
     "grunt-moonboots": "0.1.0"
   },
+  "devDependencies": {},
   "jshintConfig": {
     "asi": false,
     "browser": true,

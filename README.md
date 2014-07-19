@@ -1,23 +1,14 @@
-# Test Project
-
-This app was generated with the [ampersand cli tool](http://ampersandjs.com/learn/quick-start-guide).
+ampersand-poc
+=============
 
 ## How to run it
 
-1. download/install [node.js](http://nodejs.org/)
-1. install dependencies: `npm i`
-1. run it: `npm start`
-1. open http://localhost:3000 in a browser
+1. clone project
+2. npm install (be carefull not to delete node_modules. it has 1 module that is not published yet)
+3. grunt (this will create the _build folder, and all the production tasks)
+4. node server.js
 
-## How it's structured
+a) in port 3000 is the dev server	-> right click will show temp files
+b) in port 3001 is the prod server 	-> right click will show cdn files
 
-See docs: http://ampersandjs.com/
-Curated modules: http://tools.ampersandjs.com/
-
-## Credits
-
-Built by folks at [&yet](http://andyet.com).
-
-## Want a deeper understanding?
-
-Get the book: http://humanjavascript.com
+TO DO = use the image from the cdn (currently is loaded in the .js file)
