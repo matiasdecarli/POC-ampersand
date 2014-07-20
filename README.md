@@ -10,5 +10,3 @@ ampersand-poc
 
 a) in port 3000 is the dev server	-> right click will show temp files
 b) in port 3001 is the prod server 	-> right click will show cdn files
-
-TO DO = use the image from the cdn (currently is loaded in the .js file)
