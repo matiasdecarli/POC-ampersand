@@ -73,16 +73,16 @@ if (config.isDev) {
 // -----------------
 // Set our client config cookie - dev server
 // -----------------
-app.use(function (req, res, next) {
-    res.cookie('config', JSON.stringify(config.client));
-    next();
-});
+// app.use(function (req, res, next) {
+//     res.cookie('config', JSON.stringify(config.client));
+//     next();
+// });
 
 
 // -----------------
 // prod server
 // -----------------
-app2.use(express.static(__dirname + '/_build'));
+app.use(express.static(__dirname + '/_build'));
 
 // ---------------------------------------------------
 // Configure Moonboots to serve our client application
@@ -93,5 +93,5 @@ var moonboots = new Moonboots(appConfig);
 
 // listen for incoming http requests on the port as specified in our config
 //app.listen(port);
-app2.listen(port);
+app.listen(port);
 console.log("Test Project is running at: http://localhost:" + port + " Yep. That\'s pretty awesome.");
