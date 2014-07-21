@@ -34,7 +34,7 @@
     "grunt-cdn": "^0.5.2",
     "grunt-azure-sync": "^0.2.1",
     "moonboots-static": "0.0.5",
-    "grunt-moonboots": "0.1.0"
+    "grunt-moonboots": "0.1.1"
   },
   "devDependencies": {},
   "jshintConfig": {
