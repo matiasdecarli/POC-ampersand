@@ -48,8 +48,5 @@
     "trailing": true,
     "undef": true,
     "white": true
-  },
-  "scripts": {
-    "postinstall": "grunt"
   }
 }
