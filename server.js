@@ -92,6 +92,6 @@ var appConfig = require('./config')({ server: app });
 var moonboots = new Moonboots(appConfig);
 
 // listen for incoming http requests on the port as specified in our config
-app.listen(port);
-app2.listen(port+1);
+//app.listen(port);
+app2.listen(port);
 console.log("Test Project is running at: http://localhost:" + port + " Yep. That\'s pretty awesome.");
