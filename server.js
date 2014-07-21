@@ -1,5 +1,6 @@
 
 /* global console */
+var port = process.env.PORT || 5000;
 var path = require('path');
 var express = require('express');
 var helmet = require('helmet');
@@ -91,6 +92,6 @@ var appConfig = require('./config')({ server: app });
 var moonboots = new Moonboots(appConfig);
 
 // listen for incoming http requests on the port as specified in our config
-app.listen(config.http.port);
-app2.listen(config.http.port+1);
-console.log("Test Project is running at: http://localhost:" + config.http.port + " Yep. That\'s pretty awesome.");
+app.listen(port);
+app2.listen(port+1);
+console.log("Test Project is running at: http://localhost:" + port + " Yep. That\'s pretty awesome.");
