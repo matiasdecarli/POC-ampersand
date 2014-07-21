@@ -81,7 +81,7 @@ app.use(function (req, res, next) {
 // -----------------
 // prod server
 // -----------------
-//app2.use(express.static(__dirname + '/_build'));
+app2.use(express.static(__dirname + '/_build'));
 
 // ---------------------------------------------------
 // Configure Moonboots to serve our client application
@@ -92,5 +92,5 @@ var moonboots = new Moonboots(appConfig);
 
 // listen for incoming http requests on the port as specified in our config
 app.listen(config.http.port);
-//app2.listen(config.http.port+1);
+app2.listen(config.http.port+1);
 console.log("Test Project is running at: http://localhost:" + config.http.port + " Yep. That\'s pretty awesome.");
